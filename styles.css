@@ -1,3 +1,8 @@
+img {
+    width: 50%;
+    height: auto;
+  }
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -75,3 +80,6 @@ footer {
     padding: 20px;
     text-align: center;
     }
+
+
+      
