@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Designing a silver market data pipeline for WSS — Dimitri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-title">Dimitri</a>
+      <nav class="nav">
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../wall-street-silver.html">Wall Street Silver</a>
+        <a href="../about.html">About</a>
+        <a href="../resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main container">
+    <article>
+      <header>
+        <h1>Designing a silver market data pipeline for WSS</h1>
+        <p><time datetime="2025-12-05">2025-12-05</time> &middot; <span class="post-tags">[Markets] [Data]</span></p>
+      </header>
+
+      <p>
+        Wall Street Silver needs reliable market data: CFTC commitment of traders reports,
+        COMEX inventory levels, LBMA prices, and community sentiment signals from Reddit.
+      </p>
+
+      <p>
+        The challenge is building a pipeline that ingests from multiple sources with
+        different schemas, normalizes timestamps, handles failures gracefully, and
+        stores everything in a queryable time-series format.
+      </p>
+
+      <h2>Pipeline components</h2>
+      <ul>
+        <li>Reddit API ingestion for sentiment extraction</li>
+        <li>CFTC data parsing and normalization</li>
+        <li>COMEX/LBMA price feeds</li>
+        <li>Time-series database for storage</li>
+        <li>Analytics layer for signal extraction</li>
+        <li>Visualization dashboard</li>
+      </ul>
+
+      <p>
+        This pipeline supports research, community insights, and market analysis tools
+        that help understand silver market dynamics.
+      </p>
+
+      <p><a href="../writing.html">← Back to Writing</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Dimitri. Static HTML.</small>
+    </div>
+  </footer>
+</body>
+</html>

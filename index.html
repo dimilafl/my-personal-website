@@ -1,85 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Dimitri's Personal Website</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <title>Dimitri — Systems, Markets, Infrastructure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-	<header>
-		<h1>Welcome to My Personal Website</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-            <img src="avi.jpg" alt="Description of the image">
-			<p>Write a brief introduction about yourself here.</p>
-		</section>
-		<section id="skills">
-			<h2>My Skills</h2>
-			<ul>
-                <li>JavaScript</li>
-                 <li>Python </li>
-                 <li>HTML </li>
-                 <li>CSS </li>
-                 <li>SQL </li>
-                 <li>MongoDB </li>
-                 <li>React.js</li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-title">Dimitri</a>
+      <nav class="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="wall-street-silver.html">Wall Street Silver</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
 
-                <!-- add pics in for tech  -->
-                <!-- add projects in -->
-                <!-- add college and occupation in -->
-                
+  <main class="site-main container">
+    <section class="hero">
+      <h1>Dimitri — systems, markets, and infrastructure.</h1>
+      <p>
+        Work in real-time gas SCADA. Operate Wall Street Silver. Build control-system tools,
+        protocol simulators, market analytics, and research environments.
+      </p>
+    </section>
 
-			</ul>
-		</section>
-		<section id="projects">
-			<h2>My Projects</h2>
-			<ul>
-				<li><a href="#">Project 1</a></li>
-				<li><a href="#">Project 2</a></li>
-				<li><a href="#">Project 3</a></li>
-				<li><a href="#">Project 4</a></li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required><br>
+    <section class="home-section">
+      <h2>What I work on</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Critical infrastructure & SCADA</h3>
+          <p>
+            Real-time telemetry, historian behavior, alarms, point lifecycles, PLC control logic,
+            Modbus/DNP3 ingestion, HMI binding.
+          </p>
+          <p><a href="portfolio.html#scada">SCADA work</a></p>
+        </article>
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required><br>
+        <article class="card">
+          <h3>Markets & Wall Street Silver</h3>
+          <p>
+            Market research, data pipelines, sentiment analysis, silver-market analytics,
+            tooling under the Wall Street Silver brand.
+          </p>
+          <p><a href="wall-street-silver.html">WSS overview</a></p>
+        </article>
 
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea><br>
+        <article class="card">
+          <h3>Experiments & Engineering</h3>
+          <p>
+            Simulators, protocol tools, structured-text interpreters, control experiments,
+            analysis environments, standalone systems.
+          </p>
+          <p><a href="writing.html">Writing</a></p>
+        </article>
+      </div>
+    </section>
 
-				<input type="submit" value="Send">
-			</form>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 My Personal Website</p>
+    <section class="home-section">
+      <h2>Selected Work</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>SCADA Data Path Build</h3>
+          <p>
+            Simulated field points → quality rules → alarms → historian storage → minimal HMI.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>SCADA</li>
+          </ul>
+          <p><a href="portfolio.html#scada-data-path">Details</a></p>
+        </article>
+        <article class="card">
+          <h3>Point Lifecycle Simulator</h3>
+          <p>
+            Full lifecycle: point definition → scaling → quality → ROC/threshold alarms → history.
+          </p>
+          <ul class="meta-list">
+            <li>Modeling</li>
+            <li>SCADA</li>
+          </ul>
+          <p><a href="portfolio.html#point-lifecycle">Details</a></p>
+        </article>
+        <article class="card">
+          <h3>PLC Logic Emulator</h3>
+          <p>
+            Interpreter for ladder/structured-text essentials: timers, interlocks, permissives.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>Control Logic</li>
+          </ul>
+          <p><a href="portfolio.html#plc-logic">Details</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-        <section id="links">
-            <h2>Links</h2>
-            <ul>
-              <li><a href="https://www.example.com">Personal Website</a></li>
-              <li><a href="https://www.google.com">Google</a></li>
-              <li><a href="https://www.github.com">GitHub</a></li>
-              <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com">Instagram</a></li>
-            </ul>
-          </section>
-
-	</footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Dimitri. Static HTML.</small>
+    </div>
+  </footer>
 </body>
 </html>

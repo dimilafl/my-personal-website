@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio — Dimitri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-title">Dimitri</a>
+      <nav class="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="writing.html">Writing</a>
+        <a href="wall-street-silver.html">Wall Street Silver</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main container">
+    <h1>Portfolio</h1>
+    <p>Projects across SCADA, markets, and engineering.</p>
+
+    <section class="home-section" id="scada">
+      <h2>Infrastructure & SCADA</h2>
+      <div class="card-grid">
+
+        <article class="card" id="scada-data-path">
+          <h3>SCADA Data Path Simulator</h3>
+          <p>
+            End-to-end pipeline: simulated field points, scaling, engineering units,
+            Modbus-style behavior, bad-quality injection, historian compression,
+            alarm evaluation, basic web HMI.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>SCADA</li>
+            <li>HMI</li>
+          </ul>
+          <p><a href="https://github.com/yourusername/scada-data-path" target="_blank">Source</a></p>
+        </article>
+
+        <article class="card" id="point-lifecycle">
+          <h3>SCADA Point Lifecycle Simulator</h3>
+          <p>
+            Lifecycle engine modeling point definition → scaling → quality flags →
+            ROC/high/low alarms → event emission → historian record → minimal HMI binding.
+          </p>
+          <ul class="meta-list">
+            <li>Simulation</li>
+            <li>SCADA Semantics</li>
+          </ul>
+        </article>
+
+        <article class="card" id="protocol-ingestion">
+          <h3>Protocol Ingestion Service</h3>
+          <p>
+            Modbus TCP and DNP3 polling loops: timeouts, retries, quality codes, timestamping,
+            simulated field devices, clean API for telemetry ingestion.
+          </p>
+          <ul class="meta-list">
+            <li>Modbus</li>
+            <li>DNP3</li>
+            <li>Python</li>
+          </ul>
+        </article>
+
+        <article class="card" id="plc-logic">
+          <h3>PLC Logic Emulator</h3>
+          <p>
+            Minimal ladder/structured-text interpreter. Timers, interlocks,
+            permissives, deterministic evaluation, scan-cycle behavior.
+          </p>
+          <ul class="meta-list">
+            <li>Control Logic</li>
+            <li>Python</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="home-section" id="markets">
+      <h2>Markets & Wall Street Silver</h2>
+      <div class="card-grid">
+
+        <article class="card" id="wss-analytics">
+          <h3>Wall Street Silver Analytics</h3>
+          <p>
+            Market analysis tooling: sentiment signals, Reddit API ingestion,
+            CFTC data, COMEX inventory tracking, LBMA metals prices, time-series
+            processing, dashboards.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>Data</li>
+            <li>Markets</li>
+          </ul>
+          <p><a href="https://wallstreetsilver.app" target="_blank">wallstreetsilver.app</a></p>
+        </article>
+
+        <article class="card" id="sentiment-mvp">
+          <h3>Silver Sentiment MVP</h3>
+          <p>
+            Reddit → sentiment model → time-series DB → visualization layer.
+            Pipeline design, data governance, schema design, analytics tooling.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>NLP</li>
+            <li>Timeseries</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="home-section" id="other">
+      <h2>Other Engineering</h2>
+      <div class="card-grid">
+
+        <article class="card" id="misc-sim">
+          <h3>Control Systems Experiments</h3>
+          <p>
+            Standalone logic experiments, small interpreters, test harnesses,
+            protocol fuzzing, deterministic scheduling tests.
+          </p>
+          <ul class="meta-list">
+            <li>Python</li>
+            <li>Systems</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Dimitri. Static HTML.</small>
+    </div>
+  </footer>
+</body>
+</html>
