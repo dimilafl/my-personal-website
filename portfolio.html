@@ -28,56 +28,59 @@
       <h2>Infrastructure & SCADA</h2>
       <div class="card-grid">
 
-        <article class="card" id="scada-data-path">
-          <h3>SCADA Data Path Simulator</h3>
+        <article class="card" id="scada-hmi-pipeline">
+          <h3>SCADA HMI Pipeline</h3>
           <p>
             End-to-end pipeline: simulated field points, scaling, engineering units,
-            Modbus-style behavior, bad-quality injection, historian compression,
-            alarm evaluation, basic web HMI.
+            bad-quality injection, historian compression, alarm evaluation,
+            and a minimal web HMI that visualizes the telemetry stream.
           </p>
           <ul class="meta-list">
             <li>Python</li>
             <li>SCADA</li>
             <li>HMI</li>
           </ul>
-          <p><a href="https://github.com/yourusername/scada-data-path" target="_blank">Source</a></p>
+          <p><a href="https://github.com/yourusername/scada-hmi-pipeline" target="_blank">Source</a></p>
         </article>
 
         <article class="card" id="point-lifecycle">
-          <h3>SCADA Point Lifecycle Simulator</h3>
+          <h3>Point Lifecycle Simulator</h3>
           <p>
-            Lifecycle engine modeling point definition → scaling → quality flags →
-            ROC/high/low alarms → event emission → historian record → minimal HMI binding.
+            Lifecycle engine modeling point definition, scaling, quality flags,
+            ROC/high/low alarms, event emission, and historian records.
           </p>
           <ul class="meta-list">
             <li>Simulation</li>
             <li>SCADA Semantics</li>
           </ul>
+          <p><a href="https://github.com/yourusername/point-lifecycle-simulator" target="_blank">Source</a></p>
         </article>
 
-        <article class="card" id="protocol-ingestion">
-          <h3>Protocol Ingestion Service</h3>
+        <article class="card" id="scada-comms-frontend">
+          <h3>SCADA Comms Front-End</h3>
           <p>
-            Modbus TCP and DNP3 polling loops: timeouts, retries, quality codes, timestamping,
-            simulated field devices, clean API for telemetry ingestion.
+            Virtual SCADA front-end processor: simulated RTUs/PLCs, message queues,
+            pacing and latency control, validation and timestamping of telemetry.
           </p>
           <ul class="meta-list">
-            <li>Modbus</li>
-            <li>DNP3</li>
             <li>Python</li>
+            <li>SCADA</li>
+            <li>Comms</li>
           </ul>
+          <p><a href="https://github.com/yourusername/scada-comms-frontend" target="_blank">Source</a></p>
         </article>
 
         <article class="card" id="plc-logic">
-          <h3>PLC Logic Emulator</h3>
+          <h3>PLC MicroScan Engine</h3>
           <p>
-            Minimal ladder/structured-text interpreter. Timers, interlocks,
-            permissives, deterministic evaluation, scan-cycle behavior.
+            Minimal ladder/structured-text interpreter modeling scan cycles, timers,
+            permissives, and interlocks without needing a physical PLC.
           </p>
           <ul class="meta-list">
             <li>Control Logic</li>
             <li>Python</li>
           </ul>
+          <p><a href="https://github.com/yourusername/plc-microscan-engine" target="_blank">Source</a></p>
         </article>
 
       </div>
@@ -136,11 +139,36 @@
 
       </div>
     </section>
+
+    <section class="home-section" id="gallery">
+      <h2>Photo Gallery</h2>
+      <p>
+        A few snapshots from projects, workspaces, and builds.
+      </p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="assets/img/gallery/shot1.jpg" alt="SCADA HMI Pipeline screenshot">
+        </figure>
+        <figure>
+          <img src="assets/img/gallery/shot2.jpg" alt="PLC MicroScan Engine view">
+        </figure>
+        <figure>
+          <img src="assets/img/gallery/shot3.jpg" alt="Wall Street Silver analytics dashboard">
+        </figure>
+        <figure>
+          <img src="assets/img/gallery/shot4.jpg" alt="Workspace / setup">
+        </figure>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© Dimitri. Static HTML.</small>
+      <small>© Dimitri.</small>
+      <span> · </span>
+      <a href="https://www.linkedin.com/company/YOUR_WSS_HANDLE/" target="_blank">Wall Street Silver on LinkedIn</a>
+      <span> · </span>
+      <a href="https://www.instagram.com/YOUR_IG_HANDLE/" target="_blank">Instagram</a>
     </div>
   </footer>
 </body>

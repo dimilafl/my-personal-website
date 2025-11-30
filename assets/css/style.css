@@ -178,3 +178,18 @@ a:hover {
   margin: 1.5rem 0;
   border: 2px solid #1f2933;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2933;
+  object-fit: cover;
+}
